@@ -13,8 +13,7 @@ fn get_proxy_authorization(username: &str, password: &str) -> String {
 
 fn make_request(host: &str, port: u16) -> String {
     format!(
-        "CONNECT {0}:{1} HTTP/1.1\r\n\
-         Proxy-Connection: Keep-Alive\r\n",
+        "CONNECT {0}:{1} HTTP/1.1\r\n",
         host, port
     )
 }
